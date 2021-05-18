@@ -45,13 +45,17 @@ console.log(state.jobs, props)
 
 
   return (
-    <div>
-      <h2></h2>
-      
+    <div style={{
+      display:'flex'
+    }}>      
       {state.jobs.length ? (
-        <Card.Group itemsPerRow={3}>
+        <Card.Group itemsPerRow={2}>
             {filterJobs().map(job => (
-                <JobItem apply= {props.apply} submit={props.submit} select={props.select} selectme={props.selectme} walker={props.walker}
+                <JobItem apply= {props.apply} 
+                          submit={props.submit} 
+                          select={props.select} 
+                          selectme={props.selectme} 
+                          walker={props.walker}
                   key= {job._id}
                   _id={job._id}
                   user_id={job.user_id}

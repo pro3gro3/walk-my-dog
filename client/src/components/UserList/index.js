@@ -45,7 +45,10 @@ function UserList(props) {
       {state.users.length ? (
         <div className="flex-row"> 
             {filterUsers().map(user => (
-                <UserItem apply={props.apply} job_id={props.job_id} job_price={props.job_price}  selectedUser={props.selectedUser}
+                <UserItem type={props.type} 
+                          job_id={props.job_id} 
+                          job_price={props.job_price}  
+                          selectedUser={props.selectedUser}
                   key= {user._id}
                   _id={user._id}
                   firstName={user.firstName}

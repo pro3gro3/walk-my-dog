@@ -13,7 +13,9 @@ const HomepageBanner = () =>{
         <div className="background-image">
             <Container text
                 style={{
-                    padding:'10em'
+                    paddingTop:'10em',
+                    paddingLeft:'30em',
+                    paddingBottom:'2em'
                 }}
             >
                 <Header
@@ -21,24 +23,30 @@ const HomepageBanner = () =>{
                     content='Dog Dash'
                     style={{
                         fontSize: '4em',
-                        fontWeight: 'normal',
+                        fontWeight: 'bold',
                         marginBottom: 0,
                         paddingTop: '1em',
+                        color:'lightseagreen',
+                        fontFamily: 'Roboto Mono,sans-serif'
                     }}
                 />
-                <Header
-                    as='h2'
-                    content='Do whatever you want when you want to.'
-                    style={{
-                        fontWeight: 'normal',
-                    }}
-                />
+                <p style={{
+                    fontWeight: 'normal',
+                    color:'white',
+                    fontSize: '1em',
+                    
+                   
+                }}>
+                    Can't find the time to walk your fur friend? <br/> 
+                    Dog Dash is here to assist you with finding a suitable walker for your dog!
+                </p>
+
                 <Link to="/login">
-                    <Button color='teal' size='huge'>
+                    <Button color='teal' size='huge' fontFamily= 'Roboto Mono,sans-serif'>
                         Register
                         <Icon name='right arrow' />
                     </Button>
-                </Link>
+                </Link>            
             </Container>
         </div>
 

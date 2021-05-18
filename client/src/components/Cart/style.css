@@ -73,3 +73,17 @@
     margin: 0 auto;
   }
 }
+.job-container {
+  display: flex;
+  padding-top:3rem;
+}
+
+.flex-child{
+
+  flex: 1;
+  padding: 1rem;
+}
+
+.flex-child:first-child{
+  margin-right: 20px;
+}

@@ -19,7 +19,7 @@ db.once('open', async () => {
     address: '105 Eastwod Ave. Sacarborough M1N 3H4',
     description: 'Loves cats more than dogs!',
     image: './images/user1.JPG',
-    type: 'wDog Owner'/*,
+    type: 'Dog Owner'/*,
     orders: [
       {
         jobs: [jobs[0]._id]
